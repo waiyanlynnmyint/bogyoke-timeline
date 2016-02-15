@@ -1,6 +1,9 @@
 # bogyoke-timeline
 An interactive timeline of Bogyoke Aung San.
 
-Some catchy important sounding sentences explaining why we did this and why you should care.
+Some sentences explaining why we did this and why you should care.
 
-You shouldn't.
+1.Sentence 1
+2.Sentence 2
+3.Sentence 3
+
