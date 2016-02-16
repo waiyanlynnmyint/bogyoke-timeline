@@ -6453,7 +6453,7 @@ button.close {
 .modal-header .close {
   margin-top: -2px; }
 
-.modal-title {
+.modalTitle {
   margin: 0;
   font-weight: 700;
   line-height: 1.5; }
