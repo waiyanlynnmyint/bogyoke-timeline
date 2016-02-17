@@ -9,8 +9,9 @@ header {
 .timeline {
     list-style: none;
     padding: 10px 0;
-    position: relative;
+    position: absolute;
     font-weight: 300;
+    
 }
 
 .timeline:before {
@@ -19,6 +20,7 @@ header {
     position: absolute;
     content:" ";
     width: 3px;
+    height: 100%;
     background: #eeeeee;
     left: 50%;
     margin-left: -1.5px;
@@ -27,7 +29,7 @@ header {
 .timeline > li {
     margin-bottom: 40px;
     position: relative;
-    width: 50%;
+    width: 48%;
     float: left;
     clear: left;
 }
