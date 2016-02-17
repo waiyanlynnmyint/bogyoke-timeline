@@ -41,7 +41,7 @@ header {
     clear: both;
 }
 
-.timeline > li > .timeline-panel {
+.timeline > li > .timeline-panel, .timeline-date {
     width: calc(100% - 25px);
     width: -moz-calc(100% - 25px);
     width: -webkit-calc(100% - 25px);
@@ -49,7 +49,37 @@ header {
     border: 1px solid #dcdcdc;
     background: #ffffff;
     position: relative;
+    
 }
+.timeline-date {
+    border: 2px solid black;
+    height: 5em;
+    margin-bottom: 30px;
+}
+
+.timeline-date:before, .timeline-date:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.timeline-date:after {
+    border-color: ;
+    border-top-color: #fcf8e3;
+    border-width: 18px;
+    margin-left: -18px; 
+}
+.timeline-date:before {
+    border-color: ;
+    border-top-color: black;
+    border-width: 20px;
+    margin-left: -20px; 
+}
+
 
 .timeline > li > .timeline-panel:before {
     position: absolute;
@@ -63,6 +93,7 @@ header {
     content:" ";
 }
 
+
 .timeline > li > .timeline-panel:after {
     position: absolute;
     top: 27px;
@@ -74,6 +105,7 @@ header {
     border-bottom: 14px solid transparent;
     content:" ";
 }
+
 
 .timeline > li > .timeline-badge {
     color: #fff;
@@ -87,7 +119,7 @@ header {
     z-index: 100;
 }
 
-.timeline > li.timeline-inverted > .timeline-panel {
+.timeline > li.timeline-inverted > .timeline-panel, li.timeline-inverted > .timeline-date {
     float: right;
 }
 .timeline > li.timeline-inverted > .timeline-panel:before {
@@ -167,7 +199,7 @@ header {
         float: left;
         clear: left;
     }
-    ul.timeline > li > .timeline-panel {
+    ul.timeline > li > .timeline-panel, li > .timeline-date {
         width: calc(100% - 65px);
         width: -moz-calc(100% - 65px);
         width: -webkit-calc(100% - 65px);
@@ -177,7 +209,7 @@ header {
         margin-left: 0;
         top: 16px;
     }
-    ul.timeline > li > .timeline-panel {
+    ul.timeline > li > .timeline-panel, li> .timeline-date {
         float: right;
     }
     ul.timeline > li > .timeline-panel:before {
