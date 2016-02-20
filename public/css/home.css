@@ -4,14 +4,12 @@ header {
 
 }
 
-
-
 .timeline {
     list-style: none;
     padding: 10px 0;
     position: absolute;
     font-weight: 300;
-    
+    width: 80%;
 }
 
 .timeline:before {
@@ -154,7 +152,7 @@ header {
     color: #4679bd;
     border-bottom: 2px solid black;
 }
-.timeline-body > p, .timeline-body > ul {
+.timeline-body  p, .timeline-body  ul {
     padding: 10px 15px;
     margin-bottom: 0;
     font-size: 17px;
@@ -180,6 +178,7 @@ header {
 .timeline > li:nth-child(2) {
     margin-top: 60px;
 }
+
 .timeline > li.timeline-inverted > .timeline-badge {
     left: -12px;
 }
@@ -234,5 +233,10 @@ header {
     }
     .timeline > li.timeline-inverted > .timeline-badge {
         left: 28px;
+    }
+}
+@media (min-width: 768px and max-width:1024px) {
+    .timeline {
+        width: 80%;
     }
 }
